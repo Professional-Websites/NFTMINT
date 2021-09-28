@@ -1,0 +1,35 @@
+.card{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+}
+.frame{
+    width: 686px;
+    margin: 0 -7rem;
+}
+@media (max-width: 1024px){
+    .card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame{
+        width: 686px;
+        margin: 0;
+        margin-left: 3rem;
+    }
+}
+@media (max-width: 767px){
+    .card{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .frame{
+        width: 686px;
+        margin: 0;
+        margin-left: 3rem;
+    }
+}

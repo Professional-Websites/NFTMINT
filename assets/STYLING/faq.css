@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Quicksand&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: borde-box;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #1c1c1c;
+  color: #fff;
+}
+
+section{
+  width: 80%;
+  min-height: 100vh;
+  display: flex;
+  margin: 0 auto;
+  align-items: center;
+  flex-direction: column;
+}
+
+h2{
+  font-size: 3rem;
+  margin: 2rem 0rem;
+}
+
+.container{
+  max-width: 100%;
+  margin-top: 2rem;
+  padding-bottom: 1rem;
+  border-radius: 2px solid #fff;
+  cursor: pointer;
+}
+.quesion{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.quesion h3{
+  font-size: 1.4rem;
+}
+.quesion svg{
+  fill: #fff;
+}
+.container.active svg{
+  transform: rotate(180deg);
+}
+
+.answer p{
+  padding-top: 1rem;
+  line-height: 1.6rem;
+  font-size: 1rem;
+}
+.answer{
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 1.2s ease;
+}
+
+.container.active .answer{
+  max-height: 300px;
+  transition: max-height 1.2s ease;
+  
+}
+
+@media (max-width: 450px){
+  
+  .quesion h3{
+  font-size: .5rem;
+}
+  
+}
+
+@media (max-width: 650px){
+  
+  .quesion h3{
+  font-size: 1.2rem;
+}
+  
+}
